@@ -1,4 +1,4 @@
-const topBarCenterText = `VA3HDL - FN04ga`;
+const topBarCenterText = `KN6PTQ - Santa Clara County`;
 
 // Grid layout
 var layout_cols = 4;
@@ -13,44 +13,12 @@ const aURL = [
   ["add10d", "BACK", "#", "1", "R"],
   ["ff9100", "Refresh", "#", "1"],
   ["0dd1a7", "Help", "#", "1"],
-  ["2196F3", "CLUBLOG", "https://clublog.org/livestream/VA3HDL", "1.7"],
-  [
-    "2196F3",
-    "CONTEST",
-    "https://www.contestcalendar.com/fivewkcal.html",
-    "1",
-  ],
-  ["2196F3", "DX CLUSTER", "https://dxcluster.ha8tks.hu/map/", "1"],
-  [
-    "2196F3",
-    "LIGHTNING",
-    "https://map.blitzortung.org/#3.87/36.5/-89.41",
-    "1",
-    "R",
-  ],
-  ["2196F3", "PISTAR", "http://pi-star.local/", "1.2"],
-  [
-    "2196F3",
-    "RADAR",
-    "https://weather.gc.ca/?layers=alert,radar&center=43.39961001,-78.53212031&zoom=6&alertTableFilterProv=ON",
-    "1",
-    "R"
-  ],
+  ["2196F3", "QRZ", "https://www.qrz.com/db/KN6PTQ", "1"],
+  ["2196F3", "LIGHTNING", "https://map.blitzortung.org/#3.87/36.5/-89.41", "1", "R"],
+  ["2196F3", "RADAR", "https://weather.gc.ca/?layers=alert,radar¢er=37.780079,-122.420174&zoom=6&alertTableFilterProv=ON", "1", "R"],
+  ["2196F3", "WEATHER", "https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=37.774929&lon=-122.419418&zoom=5", "1", "R"],
+  ["2196F3", "WINDS", "https://earth.nullschool.net/#current/wind/surface/level/orthographic=-122.456,37.788,3000", "1", "R"],
   ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
-  [
-    "2196F3",
-    "WEATHER",
-    "https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=44.0157&lon=-79.4591&zoom=5",
-    "1",
-    "R",
-  ],
-  [
-    "2196F3",
-    "WINDS",
-    "https://earth.nullschool.net/#current/wind/surface/level/orthographic=-78.79,44.09,3000",
-    "1",
-    "R",
-  ],
 ];
 
 // Dashboard items
@@ -60,53 +28,68 @@ const aURL = [
 // You can't add more items because there are only 12 placeholders on the dashboard
 // but you can replace the titles and the images with anything you want.
 const aIMG = [
+  //1 
   ["RADAR", "https://radar.weather.gov/ridge/standard/CONUS_loop.gif"],
+  //2
   [
     "LOCAL RADAR",
-    "https://radar.weather.gov/ridge/standard/KNQA_loop.gif",
+    "https://radar.weather.gov/ridge/standard/KMUX_loop.gif",
   ],
+  //3
   [
     "NOAA D-RAP",
     "https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png",
   ],
+  //4
   [
     "ISS POSITION",
-    "https://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544",
+    "https://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544", "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=28654"
   ],
+  //5
   [
-    "SATELLITE CAN",
-    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/can/EXTENT3/GOES16-CAN-EXTENT3-1125x560.gif",
+    "SATELLITE WUS",
+    "https://cdn.star.nesdis.noaa.gov/GOES18/GLM/SECTOR/wus/EXTENT3/GOES18-WUS-EXTENT3-1000x1000.gif",
   ],
+  //6
   [
     "SATELLITE CGL",
     "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/cgl/EXTENT3/GOES16-CGL-EXTENT3-600x600.gif",
   ],
+  //7
   [
-    "LIGHTNING",
-    "https://images.lightningmaps.org/blitzortung/america/index.php?animation=usa",
+    "FORECAST",
+    "https://radar.weather.gov/ridge/standard/KMUX_loop.gif",
   ],
+  //8
   [
     "LIGHTNING LOCAL",
-    "https://www.blitzortung.org/en/Images/image_b_ny.png",
+    "https://www.blitzortung.org/en/Images/image_b_ca.png",
   ],
-  ["YOUTUBE EXAMPLE", "iframe|https://www.youtube.com/embed/fzPFaXAV_2Y?autoplay=1&mute=1"],
+  //9
   [
-    "WEBSITE EXAMPLE",
-    "iframe|https://globe.adsbexchange.com/?airport=YYZ",
+    "LOCAL ABSD",
+    "iframe|https://globe.adsbexchange.com/?airport=SJC",
   ],
-  ["VIDEO EXAMPLE", "https://himawari8.nict.go.jp/movie/720/20240611_pifd.mp4"],
+  //10
   ["HF PROPAGATION",
     "https://www.hamqsl.com/solar101vhf.php"],
+  //11
+ ["HF PROPAGATION",
+    "https://www.hamqsl.com/solarpich.php"],
   [
-    "RS-44 POSITION",
-    "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
-  ],
+  //12
   ["Solar WX",
     "https://services.swpc.noaa.gov/images/animations/suvi/primary/map/latest.png"],
+  /*
   ["HF PROPAGATION",
     "https://www.hamqsl.com/solar100sc.php"],
   ["HF PROPAGATION",
     "https://www.hamqsl.com/solarpich.php"],
+  [
+    "RS-44 POSITION",
+    "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
+  ],
+  */
 ];
 
 // Image rotation intervals in milliseconds per tile - If the line below is commented, all tiles will be rotated every 30000 milliseconds (30s)
