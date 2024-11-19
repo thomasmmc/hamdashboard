@@ -65,7 +65,7 @@ const aIMG = [
   //5
   [
     "FORECAST",
-    "https://radar.weather.gov/ridge/standard/KMUX_loop.gif",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=mint&n=1",
   ],
   //6
   [
