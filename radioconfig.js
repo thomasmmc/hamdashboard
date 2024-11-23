@@ -13,14 +13,13 @@ const aURL = [
   ["add10d", "BACK", "#", "1", "R"],
   ["ff9100", "Refresh", "#", "1"],
   ["0dd1a7", "Help", "#", "1"],
-  ["2196F3", "QRZ", "https://www.qrz.com/db/KN6PTQ", "1"],
-    ["2196F3", "SCC SkyView Dashboard", "https://kn6ptq.com/index.html", "1"],
-  ["2196F3", "LIGHTNING", "https://map.blitzortung.org/#3.87/36.5/-89.41", "1", "R"],
-  ["2196F3", "NWS MTR", "https://www.weather.gov/mtr/", "1", "R"],
-  ["2196F3", "WEATHER", "https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=37.774929&lon=-122.419418&zoom=5", "1", "R"],
-  ["2196F3", "WINDS", "https://earth.nullschool.net/#current/wind/surface/level/orthographic=-122.456,37.788,3000", "1", "R"],
+     ["2196F3", "SCC SkyView Dashboard", "https://kn6ptq.com/index.html", "1"],
   ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
-["2196F3","SCC Watershed", "https://valleywateralert.org/scvwd/webcams/watersheds.php", "1", "R"],
+  
+
+/*
+["2196F3", "QRZ", "https://www.qrz.com/db/KN6PTQ", "1"],
+ */
 ];
 
 // Dashboard items
@@ -36,15 +35,6 @@ const aIMG = [
     "https://radar.weather.gov/ridge/standard/KMUX_loop.gif",
   ],
 //2 
-[
-  "Propagation",
-  "https://img.propagation.dr2w.de/n-america/10M/dr2w_animation_10M.gif",
-    "https://www.tvcomm.co.uk/g7izu/Autosave/NA_ES_AutoSave.JPG",
-  "https://img.propagation.dr2w.de/n-america/20M/dr2w_animation_20M.gif",
-  "https://img.propagation.dr2w.de/n-america/40M/dr2w_animation_40M.gif",
-  "https://img.propagation.dr2w.de/n-america/80M/dr2w_animation_80M.gif",
-  "https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png",
-  ],
   //3
  //4
   [
@@ -61,10 +51,9 @@ const aIMG = [
  ["Solar WX",
     "https://services.swpc.noaa.gov/images/animations/suvi/primary/map/latest.png"],
    //9
-  [
-    "LOCAL ABSD",
-    "iframe|https://globe.adsbexchange.com/?airport=SJC",
-  ],
+   [
+"IONOSPHERE", "https://www.sws.bom.gov.au/Images/HF%20Systems/Global%20HF/T%20Index%20Map/East/tindex.png"
+],
 
 //10
   //11
@@ -76,20 +65,43 @@ const aIMG = [
  //10
  
   //12
-
   
   ["",
     "https://www.hamqsl.com/solar101vhf.php"],
 
   ["",
-    "https://www.hamqsl.com/marston.php"]
+    "https://www.hamqsl.com/marston.php"],
+["MUF", "https://prop.kc2g.com/renders/current/mufd-normal-now.svg"],
+
+["CRITICAL FREQUENCY", "https://prop.kc2g.com/renders/current/fof2-normal-now.svg"],
+
+  [
+"CURRENT SUN", "https://umbra.nascom.nasa.gov/images/latest_aia_304.gif", "https://umbra.nascom.nasa.gov/images/latest_aia_1700.gif"
+],
+
+  [
+    "LOCAL ABSD",
+    "iframe|https://globe.adsbexchange.com/?airport=SJC",
+  ],
 
 /* 
+ "Propagation",
+  "https://img.propagation.dr2w.de/n-america/10M/dr2w_animation_10M.gif",
+    "https://www.tvcomm.co.uk/g7izu/Autosave/NA_ES_AutoSave.JPG",
+  "https://img.propagation.dr2w.de/n-america/20M/dr2w_animation_20M.gif",
+  "https://img.propagation.dr2w.de/n-america/40M/dr2w_animation_40M.gif",
+  "https://img.propagation.dr2w.de/n-america/80M/dr2w_animation_80M.gif",
+  "https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png",
+  ],
   ["HF PROPAGATION",
 "https://www.hamqsl.com/solar100sc.php"] [
     "RS-44 POSITION",
     "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
   ],
+  [
+"", "https://www.hamqsl.com/solar101vhf.php", "https://www.hamqsl.com/solar100sc.php", "https://www.hamqsl.com/solarpich.php"
+],
+
   */
 ];
 

@@ -13,8 +13,7 @@ const aURL = [
   ["add10d", "BACK", "#", "1", "R"],
   ["ff9100", "Refresh", "#", "1"],
   ["0dd1a7", "Help", "#", "1"],
-  ["2196F3", "QRZ", "https://www.qrz.com/db/KN6PTQ", "1"],
-  ["2196F3", "Radio", "/radio.html", "1"],
+   ["2196F3", "Radio Dashboard", "https://kn6ptq.com/radio.html", "1"],
   
   ["2196F3", "LIGHTNING", "https://map.blitzortung.org/#3.87/36.5/-89.41", "1", "R"],
   ["2196F3", "NWS MTR", "https://www.weather.gov/mtr/", "1", "R"],
@@ -23,6 +22,9 @@ const aURL = [
   ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
 ["2196F3","Valler Water Webcams", "https://valleywateralert.org/scvwd/webcams/watersheds.php", "1", "R"],
 ["2196F3","Valley Water Alert Map ", "https://alert.valleywater.org/map?p=map", "1", "R"],
+/*
+ ["2196F3", "QRZ", "https://www.qrz.com/db/KN6PTQ", "1"],
+*/
 ];
 
 // Dashboard items
