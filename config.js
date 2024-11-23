@@ -1,4 +1,4 @@
-const topBarCenterText = `KN6PTQ - SF Bay Area`;
+const topBarCenterText = `SF Bay Area SkyView`;
 
 // Grid layout
 var layout_cols = 4;
@@ -14,12 +14,15 @@ const aURL = [
   ["ff9100", "Refresh", "#", "1"],
   ["0dd1a7", "Help", "#", "1"],
   ["2196F3", "QRZ", "https://www.qrz.com/db/KN6PTQ", "1"],
+  ["2196F3", "Radio", "/radio.html", "1"],
+  
   ["2196F3", "LIGHTNING", "https://map.blitzortung.org/#3.87/36.5/-89.41", "1", "R"],
   ["2196F3", "NWS MTR", "https://www.weather.gov/mtr/", "1", "R"],
   ["2196F3", "WEATHER", "https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=37.774929&lon=-122.419418&zoom=5", "1", "R"],
   ["2196F3", "WINDS", "https://earth.nullschool.net/#current/wind/surface/level/orthographic=-122.456,37.788,3000", "1", "R"],
   ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
-["2196F3","SCC Watershed", "https://valleywateralert.org/scvwd/webcams/watersheds.php", "1", "R"],
+["2196F3","Valler Water Webcams", "https://valleywateralert.org/scvwd/webcams/watersheds.php", "1", "R"],
+["2196F3","Valley Water Alert Map ", "https://alert.valleywater.org/map?p=map", "1", "R"],
 ];
 
 // Dashboard items
@@ -64,44 +67,78 @@ const aIMG = [
   ],
   //5
   [
-    "FORECAST",
+    "Local Temperature",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=maxt&n=1",
     "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=mint&n=1",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=maxt&n=2",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=mint&n=2",
   ],
   //6
   [
-    "LIGHTNING LOCAL",
+    "Local Lightning",
     "https://www.blitzortung.org/en/Images/image_b_ca.png",
+    "https://cdn.star.nesdis.noaa.gov/GOES18/GLM/SECTOR/psw/EXTENT3/20243281806_GOES18-GLM-psw-EXTENT3-1200x1200.jpg",
   ],
 //7
 ["HF PROPAGATION",
-    "https://www.hamqsl.com/solarpich.php"],
+    "https://www.hamqsl.com/solarpich.php"
+    ],
 //8
  ["Solar WX",
-    "https://services.swpc.noaa.gov/images/animations/suvi/primary/map/latest.png"],
+    "https://services.swpc.noaa.gov/images/animations/suvi/primary/map/latest.png"
+    ],
    //9
   [
-    "LOCAL ABSD",
-    "iframe|https://globe.adsbexchange.com/?airport=SJC",
+    "Local Forecast",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=1",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=2",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=3",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=4",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=5",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=6",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=7",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=8",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=9",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=10",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wx&n=11",
   ],
-
 //10
+  [
+    "Local Hazards",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=1",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=2",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=3",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=4",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=5",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=6",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=7",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=8",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=9",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=10",
+    "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=wwa&n=11",
+    ],
+//11
 [
 "Guadalupe River at Alma Ave",
-"iframe|https://valleywateralert.org/scvwd/webcams/site.php?cid=5138"],
+"iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?id=5138"
+],
 
-  //11
+  //12
 
   [
     "NOAA D-RAP",
-    "https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png",
+    "https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png"
   ],
- //10
-  ["HF PROPAGATION",
+ 
+  /*
+  //12
+  
+        "LOCAL ABSD",
+    "iframe|https://globe.adsbexchange.com/?airport=SJC",
+
+"HF PROPAGATION",
 "https://www.hamqsl.com/solar100sc.php"],
  
-  //12
-
-  /*
   ["HF PROPAGATION",
     "https://www.hamqsl.com/solar101vhf.php"],
   ["HF PROPAGATION",
