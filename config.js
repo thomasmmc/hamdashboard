@@ -63,11 +63,10 @@ const aIMG = [
 */
   ],
  //4
-  [
-    "ISS POSITION",
-    "https://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544",
-  ],
-  //5
+ ["Solar Weather",
+    "https://www.hamqsl.com/solarpich.php"
+    ],
+ //5
   [
     "Local Temperature",
     "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=MTR&element=maxt&n=1",
@@ -82,13 +81,17 @@ const aIMG = [
     "https://cdn.star.nesdis.noaa.gov/GOES18/GLM/SECTOR/psw/EXTENT3/20243281806_GOES18-GLM-psw-EXTENT3-1200x1200.jpg",
   ],
 //7
-["HF PROPAGATION",
-    "https://www.hamqsl.com/solarpich.php"
-    ],
+  [
+  "Wind",
+  "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=NORTHCALIFORNIA&element=windspd&n=3",
+  "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=NORTHCALIFORNIA&element=windspd&n=4",
+  ],
 //8
- ["Solar WX",
-    "https://services.swpc.noaa.gov/images/animations/suvi/primary/map/latest.png"
-    ],
+  [
+  "Percipitation",
+  "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=NORTHCALIFORNIA&element=qpf&n=1",
+  "https://graphical.weather.gov/GraphicalNDFD.php?width=515&timezone=PST&sector=NORTHCALIFORNIA&element=qpf&n=2",
+  ],
    //9
   [
     "Local Forecast",
@@ -121,15 +124,20 @@ const aIMG = [
     ],
 //11
 [
-"Guadalupe River at Alma Ave",
-"iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?id=5138"
+  "Guadalupe River Watershed",
+  "iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?id=5138",
+  "iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?noAq=1&id=5073,35073",
+  "iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?id=5148",
+  "iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?id=5017",
 ],
 
   //12
-
   [
-    "NOAA D-RAP",
-    "https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png"
+    "Coyote Creek Watershed",
+    "iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?id=5098,5098",
+    "iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?id=5058",
+    "iframe|https://valleywateralert.org/scvwd/charts/sgi_line_chart.php?noAq=1&id=150100,15010",
+
   ],
  
   /*
