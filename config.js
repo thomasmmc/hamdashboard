@@ -14,6 +14,7 @@ const aURL = [
   ["ff9100", "Refresh", "#", "1"],
   ["0dd1a7", "Help", "#", "1"],
    ["2196F3", "Radio Dashboard", "https://kn6ptq.com/radio.html", "1"],
+  ["FC9601", "Solar Dashboard", "https://kn6ptq.com/solar.html", "1"],
   
   ["2196F3", "LIGHTNING", "https://map.blitzortung.org/#3.87/36.5/-89.41", "1", "R"],
   ["2196F3", "NWS MTR", "https://www.weather.gov/mtr/", "1", "R"],
