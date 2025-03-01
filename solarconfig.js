@@ -1,4 +1,4 @@
-const topBarCenterText = `KN6PTQ - Solar Dashboard`;
+const topBarCenterText = `KN6PTQ Solar Dashboard`;
 
 // Grid layout
 var layout_cols = 3;
@@ -7,15 +7,16 @@ var layout_rows = 2;
 // Menu items
 // Structure is as follows HTML Color code, Option, target URL, scaling 1=Original Size, side (optional, nothing is Left, "R" is Right)
 // The values are [color code, menu text, target link, scale factor, side],
-// add new lines following the structure for extra menu options. The comma at the end is important!
+// add new lines following the structure for extra menu options. The comma at the end is important/*
+
 const aURL = [
-  ["add10d", "BACK", "#", "1"],
+/*  ["add10d", "BACK", "#", "1"],
   ["add10d", "BACK", "#", "1", "R"],
   ["ff9100", "Refresh", "#", "1"],
   ["0dd1a7", "Help", "#", "1"],
      ["2196F3", "SCC SkyView Dashboard", "https://kn6ptq.com/index.html", "1"],
   ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
-  
+*/  
 
 /*
 ["2196F3", "QRZ", "https://www.qrz.com/db/KN6PTQ", "1"],
@@ -40,14 +41,13 @@ const aIMG = [
     "https://umbra.nascom.nasa.gov/images/latest_aia_304.gif"],
 //4
  ["Helioseismic and Magnetic Imager (HMI): Magnetogram",
-  "https://umbra.nascom.nasa.gov/images/latest_hmi_mgram.gif"],
+  "https://sdo.gsfc.nasa.gov/assets/img/latest/latest_512_HMIB.jpg"],
 //5
   ["Hinode X-Ray Telescope (XRT)",
-      "https://umbra.nascom.nasa.gov/images/latest_solisHe.gif"],
+   "http://solar.physics.montana.edu/HINODE/XRT/QL/syn_comp_png/latest_syn.png","https://solarmonitor.org/data/2025/03/01/pngs/hxrt/hxrt_flter_fd_20250228_180634.png"],
 //6
- ["MOAA Solar WX",
+ ["NOAA Solar WX",
     "https://services.swpc.noaa.gov/images/animations/suvi/primary/map/latest.png"],
-
  
 
 /* 
@@ -72,4 +72,4 @@ const aIMG = [
 ];
 
 // Image rotation intervals in milliseconds per tile - If the line below is commented, all tiles will be rotated every 30000 milliseconds (30s)
-const tileDelay = [500000,500000,500000,500000,500000,500000,];
+const tileDelay = [9999999,9999999,9999999,9999999,9999999,9999999,];
